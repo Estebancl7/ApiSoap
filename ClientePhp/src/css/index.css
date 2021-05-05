@@ -1,0 +1,97 @@
+:root {
+    --dark: #1a1a1a;
+    --white: #ffffff;
+    --warning: rgba(46, 57, 157, 0.3);
+    --danger: #CDA434;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .03rem;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.navbar {
+    background-color: black !important;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    font-size: 30px;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
+.btn {
+    color: black !important;
+    border: 1.5px solid rgb(1, 255, 213);
+    border-radius: 20px !important;
+    min-width: 30px;
+}
+
+.btn:hover {
+    color: rgb(1, 255, 213) !important;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    min-width: 30px;
+    background-color: white !important;
+}
+
+
+/* Inicio */
+#inicio .divider {
+    border-bottom: 2px solid black;
+}
+
+#inicio .divider:hover {
+    border-bottom: 2px solid rgb(1, 255, 213);
+}
+
+span:hover {
+    color: rgb(1, 255, 213);
+}
+
+.text a {
+    color: black;
+    font-size: 20px;
+    border-left: 3px solid rgb(1, 255, 213);
+    border-top: 3px solid rgb(1, 255, 213);
+    border-right: 3px solid rgb(1, 255, 213);
+    border-bottom: 3px solid rgb(1, 255, 213);
+    padding: 12px 25px;
+    letter-spacing: 3px;
+    border-radius: 50px;
+    background-color: none;
+}
+
+.text a:hover {
+    color: white;
+    text-decoration: none;
+    border: 3px solid rgb(1, 255, 213);
+    transition: border 1.5s;
+    transition: color 1.2s;
+    transform: scale(1.05, 1.05);
+    background-color: rgb(1, 255, 213);
+    transition: background-color 1.5s;
+    border-radius: 50px;
+}
+
+.margina {
+    margin-bottom: 800px !important;
+}
+
