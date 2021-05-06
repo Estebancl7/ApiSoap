@@ -24,13 +24,13 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="" style="text-align: center;">Inicio </a>
+                        <a class="nav-link" href="/ClientePhp/index.php" style="text-align: center;">Inicio </a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="" style="text-align: center;">Nosotros </a>
                     </li>
-                    <a href="" class="btn btn-outline-light px-2" style="text-align: center; max-width: 850px;">Ingresa un nombre</a>
-                    <a href="" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
+                    <a href="/ClientePhp/src/pages/nombre.php" class="btn btn-outline-light px-2" style="text-align: center; max-width: 850px;">Ingresa un nombre</a>
+                    <a href="/ClientePhp/src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
 
                 </ul>
             </div>
@@ -56,12 +56,11 @@
                     <div class="col-6">
                         <h5 class="text-justify mt-4 pb-5 mr-4">A continuaci&oacuten se puede encontrar el desarrollo del trabajo N°1<br> </h5>
                         <div class="mb-2">
-                            <a class="mb-5"href="">Ingresa un nombre</a>
+                            <a class="mb-5" href="/ClientePhp/src/pages/nombre.php">Ingresa un nombre</a>
                         </div>
                         <br>
                         <div>
-                            <a class="mt-5" id="a2" href="">Verifica un rut</a>
-                    
+                            <a class="mt-5" id="a2" href="/ClientePhp/src/pages/rut.php">Verifica un rut</a>
                         </div>
                     </div>
                     <div class="col-6 text-center">
