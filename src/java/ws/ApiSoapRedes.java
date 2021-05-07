@@ -46,19 +46,18 @@ public class ApiSoapRedes {
         int explo; 
         int parteDecimal;
         int parteDecimal2;
-        /*while (Rut > 0 ){
-            resto = Rut % 10;
-            invertido = invertido * 10 + resto;
-            Rut /= 10;
-        }*/
-        int multi = 8;
+        int auxiliar = Rut;
+
+        int multi = 2;
         String invertidostr = String.valueOf(Rut);
         for(int  i=0 ; i<invertidostr.length();i++){
             if(multi == 8){
                 multi = 2;
             }
-            suman += multi * (Rut %10);
-            Rut /= 10;
+            suman += multi * (auxiliar%10);
+            auxiliar /= 10;
+            parteDecimal2 = auxiliar%1;
+            auxiliar -= parteDecimal2;
             multi++;
         }
         explo = suman / 11;
@@ -68,19 +67,16 @@ public class ApiSoapRedes {
         explo = suman - explo;
         suman = 11 - explo;
         if(suman == 10){
-            return 'k';
+            /*if(){
+
+            };  */
         }else if(suman == 11){
-            return '0';
+            return 0;
         }else{
             return suman;
         }
-        /*switch (suman){
-            case 10:
-                return 'k';
-            case 11:
-                return 0;
-            default:
-                return suman;
-        }*/
+ 
     }
 }
+
+
