@@ -95,3 +95,58 @@ span:hover {
     margin-bottom: 800px !important;
 }
 
+
+.formu {
+    width: 400px;
+    padding: 30px;
+    margin:auto;
+    text-align: center;
+  }
+ 
+ 
+  .formu input{
+    padding: 5px;
+    margin-top: 10px;
+    outline: none;
+ }
+ 
+ .formu select{
+    top:20px;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid rgb(0, 162, 255);
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 10px;
+    outline: none;
+ 
+ }
+
+ .input{
+    background: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+ }
+
+ #formu a{
+    color: black;
+    font-size: 20px;
+    border-left: 3px solid rgb(1, 255, 213);
+    border-top: 3px solid rgb(1, 255, 213);
+    border-right: 3px solid rgb(1, 255, 213);
+    border-bottom: 3px solid rgb(1, 255, 213);
+    padding: 12px 25px;
+    letter-spacing: 3px;
+    border-radius: 50px;
+    background-color: none;    
+ }
+ 

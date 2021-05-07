@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top p-3 aria-label">
         <div class="container">
-            <a class="navbar-brand" href="index.html" style="color: black;">Web Services SOAP</a>
+            <a class="navbar-brand" href="index.php" style="color: black;">Web Services SOAP</a>
             <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <ion-icon name="menu-outline"></ion-icon>
             </button>
@@ -24,14 +24,17 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="/ClientePhp/index.php" style="text-align: center;">Inicio </a>
+                        <a class="nav-link" href="index.php" style="text-align: center;">Inicio </a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="" style="text-align: center;">Nosotros </a>
                     </li>
-                    <a href="/ClientePhp/src/pages/nombre.php" class="btn btn-outline-light px-2" style="text-align: center; max-width: 850px;">Ingresa un nombre</a>
-                    <a href="/ClientePhp/src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
+                    <li class="mx-5">
+                        
+                    <a href="src/pages/nombre.php" class="btn btn-outline-light px-2" style="text-align: center; max-width: 850px;">Ingresa un nombre</a>
+                    <a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
 
+                    </li>
                 </ul>
             </div>
         </div>
@@ -56,15 +59,15 @@
                     <div class="col-6">
                         <h5 class="text-justify mt-4 pb-5 mr-4">A continuaci&oacuten se puede encontrar el desarrollo del trabajo N°1<br> </h5>
                         <div class="mb-2">
-                            <a class="mb-5" href="/ClientePhp/src/pages/nombre.php">Ingresa un nombre</a>
+                            <a class="mb-5" href="src/pages/nombre.php">Ingresa un nombre</a>
                         </div>
                         <br>
                         <div>
-                            <a class="mt-5" id="a2" href="/ClientePhp/src/pages/rut.php">Verifica un rut</a>
+                            <a class="mt-5" id="a2" href="src/pages/rut.php">Verifica un rut</a>
                         </div>
                     </div>
                     <div class="col-6 text-center">
-                        <img class="" src="/ClientePhp/src/img/Soap.png" alt="" height="280px">
+                        <img class="" src="src/img/Soap.png" alt="" height="280px">
                     </div>
                 </div>
             </div>

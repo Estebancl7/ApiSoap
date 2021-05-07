@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="/ClientePhp/src/css/index.css">
     <!--Font awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
@@ -36,30 +36,22 @@
         </div>
     </nav>
 
-    <section id="inicio">
+    <section id="formu">
         <div class="container">
-            <div class="text pt-5 pb-1">
+            <form action="rut.php" name="formulario1" method="POST" autocomplete="off"></form>
+            <h1>Ingrese los datos solicitados</h1>
+            <div class="formulario">
                 
-
-                <div class="row">
-                    <div class="col-6">
-                        <h5 class="text-justify mt-4 pb-5 mr-4">A continuaci&oacuten se puede encontrar el desarrollo del trabajo N°1<br> </h5>
-                        <div class="mb-2">
-                            <a class="mb-5"href="">Ingresa un nombre</a>
-                        </div>
-                        <br>
-                        <div>
-                            <a class="mt-5" id="a2" href="">Verifica un rut</a>
-                    
-                        </div>
-                    </div>
-                    <div class="col-6 text-center">
-                        <img class="" src="/ClientePhp/src/img/Soap.png" alt="" height="280px">
-                    </div>
-                </div>
+                <?php
+                    echo '<input type="text" class="input" name="rut" id="rut" placeholder="Ingrese su rut">
+                    <a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
+                          <input class="btn" type="submit" name="enviar" value="Verificar">';
+                ?>
             </div>
         </div>
     </section>
+
+
    
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
