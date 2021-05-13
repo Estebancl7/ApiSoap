@@ -85,27 +85,7 @@
 ini_set("soap.wsdl_cache_enabled", "0");
 
 //Crear cliente
-$cliente = new SoapClient('http://localhost:8080/APISoapRedes/ApiSoapRedes?WSDL');
+
 
 //Usar metodos creados
 
-$verVerificacion = $cliente-> VerificadorRut([
-    "Rut" => 19847464 
-])-> return;
-
-if(verVerificacion != 1){
-    echo 'Rut ingresado correctamente';
-}else{
-    echo 'Rut ingresado al else';
-}
-
-$Pagototal = $cliente->ProcesarPago([
-   "total" =>50,
-    "pago" =>100
-])->return;
-
-if($Pagototal>=0){
-    echo 'Pago primer echo';
-}else{
-    echo 'Pago 2do echo';
-}

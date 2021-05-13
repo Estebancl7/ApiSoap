@@ -68,15 +68,17 @@ public class ApiSoapRedes {
         suman = 11 - explo;
         if(suman == 10){
             /*if(){
-
             };  */
         }else if(suman == 11){
             return 0;
         }else{
             return suman;
         }
+        return 0;
  
     }
 }
+
+
 
 

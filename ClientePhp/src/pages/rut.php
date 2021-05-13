@@ -37,16 +37,35 @@
     </nav>
 
     <section id="formu">
-        <div class="container">
-            <form action="rut.php" name="formulario1" method="POST" autocomplete="off"></form>
+        <div class="container bg-primary">
+            
             <h1>Ingrese los datos solicitados</h1>
             <div class="formulario">
-                
-                <?php
-                    echo '<input type="text" class="input" name="rut" id="rut" placeholder="Ingrese su rut">
-                    <a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
-                          <input class="btn" type="submit" name="enviar" value="Verificar">';
-                ?>
+            <!--<a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
+                    -->
+                <form action="rut.php" name="formulario1" method="POST" autocomplete="off">    
+                    <?php
+                        ini_set("soap.wsdl_cache_enabled", "0");
+                        $cliente = new SoapClient('http://localhost:8080/APISoapRedes/ApiSoapRedes?WSDL');
+                        
+                        echo '<input type="text" class="input" name="rut" id="rut" placeholder="Ingrese su rut">
+                            <input class="btn" type="submit" name="enviar" value="Verificar">';
+                        
+                        
+                        
+                        if(isset($_POST['enviar'])){
+                            $rut_ingresado = $_POST['rut'];
+                            $resultado = $cliente->VerificadorRut(["Rut" => $rut_ingresado])->return;
+                            
+                            if($resultado != "J"){
+                                echo '<div class="mensaje">' .$rut_ingresado .'-' .$resultado .'</div>';
+                            }else{
+                                echo 'Rut ingresado al else';
+                            }
+                        }
+
+                    ?>
+                </form>
             </div>
         </div>
     </section>
@@ -56,5 +75,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-   <script src="https://kit.fontawesome.com/c8152ea011.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/c8152ea011.js" crossorigin="anonymous"></script>
+
 </html>

@@ -150,3 +150,9 @@ span:hover {
     background-color: none;    
  }
  
+ .mensaje{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 255, 34);
+ }
