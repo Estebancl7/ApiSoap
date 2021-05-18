@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top p-3 aria-label">
         <div class="container">
-            <a class="navbar-brand" href="index.html" style="color: black;">Web Services SOAP</a>
+            <a class="navbar-brand" href="/ClientePhp/index.php" style="color: black;">Web Services SOAP</a>
             <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <ion-icon name="menu-outline"></ion-icon>
             </button>
@@ -29,7 +29,7 @@
                     <li class="nav-item px-2">
                         <a class="nav-link" href="" style="text-align: center;">Nosotros </a>
                     </li>
-                    <a href="src/" class="btn btn-outline-light px-2" style="text-align: center; max-width: 850px;">Ingresa un nombre</a>
+                    <a href="/ClientePhp/src/pages/nombre.php" class="btn btn-outline-light px-2" style="text-align: center; max-width: 850px;">Ingresa un nombre</a>
 
                 </ul>
             </div>
@@ -37,9 +37,10 @@
     </nav>
 
     <section id="formu">
-        <div class="container bg-primary">
+        <div class="container border border-info bg-info mt-5 py-5 text-center">
             
-            <h1>Ingrese los datos solicitados</h1>
+            <h1 class="text-center">Verificador de Rut</h1>
+            <h1 class="divider3"></h1>
             <div class="formulario">
             <!--<a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
                     -->
@@ -48,13 +49,13 @@
                         ini_set("soap.wsdl_cache_enabled", "0");
                         $cliente = new SoapClient('http://localhost:8080/APISoapRedes/ApiSoapRedes?WSDL');
                         
-                        echo '<input type="text" class="input" name="rut" id="rut" placeholder="Ingrese su rut">
-                            <input class="btn" type="submit" name="enviar" value="Verificar">';
+                        echo '<input type="text" class="input" name="nombre" id="nombre" placeholder="Ingrese rut">
+                            <input class="btn" type="submit" name="enviar" value="Aceptar">';
                         
                         
                         
                         if(isset($_POST['enviar'])){
-                            $rut_ingresado = $_POST['rut'];
+                            $rut_ingresado = $_POST['nombre'];
                             $resultado = $cliente->VerificadorRut(["Rut" => $rut_ingresado])->return;
                             
                             if($resultado != "J"){
