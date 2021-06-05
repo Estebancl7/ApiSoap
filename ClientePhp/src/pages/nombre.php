@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <h1 class="divider mx-5"></h1>
-                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo </h4>
+                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo 3</h4>
                 </div>
             </div>
         </nav>

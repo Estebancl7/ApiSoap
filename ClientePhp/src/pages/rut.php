@@ -40,7 +40,7 @@
         <div class="container border border-info bg-info mt-5 py-5 text-center">
             
             <h1 class="text-center">Verificador de Rut</h1>
-            <h1 class="divider3"></h1>
+            <h1 class="divider3 mx-5"></h1>
             <div class="formulario pt-5">
             <!--<a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
                     -->
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <h1 class="divider mx-5"></h1>
-                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo </h4>
+                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo 3</h4>
                 </div>
             </div>
         </nav>

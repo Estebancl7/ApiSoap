@@ -44,20 +44,29 @@
         <div class="container">
             <div class="text pt-5 pb-1">
                 <h1>
-                    <span class="">T</span>
-                    <span class="">r</span>
-                    <span class="">a</span>
+                    <span class="">W</span>
+                    <span class="">e</span>
                     <span class="">b</span>
-                    <span class="">a</span>
-                    <span class="">j</span>
-                    <span class="">o</span>
-                    <span class="ml-3">1</span>
+                    <span class="ml-3">S</span>
+                    <span class="">e</span>
+                    <span class="">r</span>
+                    <span class="">v</span>
+                    <span class="">i</span>
+                    <span class="">c</span>
+                    <span class="">e</span>
+                    <span class="">s</span>
+                    <span class="ml-3">"</span>
+                    <span class="">S</span>
+                    <span class="">O</span>
+                    <span class="">A</span>
+                    <span class="">P</span>
+                    <span class="">"</span>
                 </h1>
                 <h1 class="divider"></h1>
 
                 <div class="row">
                     <div class="col-6">
-                        <h5 class="text-justify mt-4 pb-5 mr-4">A continuaci&oacuten se puede encontrar el desarrollo del trabajo N°1<br> </h5>
+                        <h5 class="text-justify mt-4 pb-5 mr-4">A continuaci&oacuten se puede encontrar el desarrollo del trabajo N°1 correspondiente al grupo 3, en donde además puedes realizar las siguientes operaciones:<br> </h5>
                         <div class="mb-2">
                             <a class="mb-5" href="src/pages/nombre.php">Ingresa un nombre</a>
                         </div>
@@ -160,7 +169,7 @@
                         </div>
                     </div>
                     <h1 class="divider mx-5"></h1>
-                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo </h4>
+                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo 3</h4>
                 </div>
             </div>
         </nav>

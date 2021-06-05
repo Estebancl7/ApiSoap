@@ -70,7 +70,7 @@
             <br>
             <div class="row">
                 <div class="col-6 pl-5">
-                    <P>Este ser&aacute el grupo de trabajo que estar&aacute a cargo del desarrollo de los proyectos a realizar durante el semestre acádemico del año 2021 de la asignatura <strong>Redes y Comunicaci&oacuten de datos</strong>.
+                    <P>Este ser&aacute el grupo de trabajo que estar&aacute a cargo del desarrollo de los proyectos a realizar durante el semestre acádemico del año 2021 de la asignatura <strong>"Redes y Comunicaci&oacuten de datos"</strong>.
                     </P>
                     <img src="img/Grafos.png" alt="" height="180px">
                 </div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <h1 class="divider mx-5"></h1>
-                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo </h4>
+                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo 3</h4>
                 </div>
             </div>
         </nav>
