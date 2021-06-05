@@ -27,7 +27,7 @@
                         <a class="nav-link" href="index.php" style="text-align: center;">Inicio </a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="" style="text-align: center;">Nosotros </a>
+                        <a class="nav-link" href="/ClientePhp/src/pages/nosotros.php" style="text-align: center;">Nosotros </a>
                     </li>
                     <li class="mx-5">
                         
@@ -73,11 +73,109 @@
             </div>
         </div>
     </section>
-   
+
+
+    <section id="tecnologias">
+        <div class="container">
+            <div class="contenedor mx-5">
+                <h1 class="pt-5 content-center">
+                    <span class="">T</span>
+                    <span class="">e</span>
+                    <span class="">c</span>
+                    <span class="">n</span>
+                    <span class="">o</span>
+                    <span class="">l</span>
+                    <span class="">o</span>
+                    <span class="">g</span>
+                    <span class="">&iacute</span>
+                    <span class="">a</span>
+                    <span class="">s</span>
+                    <span class="ml-3">U</span>
+                    <span class="">t</span>
+                    <span class="">i</span>
+                    <span class="">l</span>
+                    <span class="">i</span>
+                    <span class="">z</span>
+                    <span class="">a</span>
+                    <span class="">d</span>
+                    <span class="">a</span>
+                    <span class="">s</span>
+                </h1>
+                <h1 class="divider content-center px-5"></h1>
+                <div class="carousel pt-1">
+                    <div class="carousel__contenedor">
+                        <button aria-label="Anterior" class="carousel__anterior">
+                            <em class="fas fa-chevron-left"></em>
+                        </button>
+
+                        <div class="carousel__lista">
+                            <div class="carousel__elemento">
+                                <img src="src/img/js.png" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                           
+                            <div class="carousel__elemento">
+                                <img src="src/img/html.png" alt="Html">
+                                <p>Html</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="src/img/css.png" alt="Css">
+                                <p>Css</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="src/img/boostrap.png" alt="Boostrap">
+                                <p>Bootstrap</p>
+                            </div>
+
+                            <div class="carousel__elemento">
+                                <img src="src/img/github.png" alt="Github">
+                                <p>Github</p>
+                            </div>
+
+                        </div>
+
+                        <button aria-label="Siguiente" class="carousel__siguiente">
+                            <em class="fas fa-chevron-right"></em>
+                        </button>
+                    </div>
+
+                    <div role="tablist" class="carousel__indicadores pb-5"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+        
+    <section id="footer">
+        <nav class="container-fluid bg-info fixed-bottom p-2 mt-1 aria-label">
+            <div class="container">
+                <div class="content-center">
+                    <div class="row my-1">
+                        <div class="col d-flex justify-content-center">
+                            <a href="" class="text-white">
+                                <em class="fab fa-github"></em>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 class="divider mx-5"></h1>
+                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo </h4>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c8152ea011.js" crossorigin="anonymous"></script>
+    <!-- Script para carrusel -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="src/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-   <script src="https://kit.fontawesome.com/c8152ea011.js" crossorigin="anonymous"></script>
+
 </html>
 
 <?php

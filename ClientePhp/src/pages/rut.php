@@ -27,7 +27,7 @@
                         <a class="nav-link" href="/ClientePhp/index.php" style="text-align: center;">Inicio </a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="" style="text-align: center;">Nosotros </a>
+                        <a class="nav-link" href="/ClientePhp/src/pages/nosotros.php" style="text-align: center;">Nosotros </a>
                     </li>
                     <a href="/ClientePhp/src/pages/nombre.php" class="btn btn-outline-light px-2" style="text-align: center; max-width: 850px;">Ingresa un nombre</a>
 
@@ -72,6 +72,23 @@
         </div>
     </section>
 
+    <section id="footer">
+        <nav class="container-fluid bg-info fixed-bottom p-2 mt-1 aria-label">
+            <div class="container">
+                <div class="content-center">
+                    <div class="row my-1">
+                        <div class="col d-flex justify-content-center">
+                            <a href="" class="text-white">
+                                <em class="fab fa-github"></em>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 class="divider mx-5"></h1>
+                    <h4 class="text-center"> Universidad Tecnológica Metropolitana | Desarrollado por: Grupo </h4>
+                </div>
+            </div>
+        </nav>
+    </section>
 
    
 </body>

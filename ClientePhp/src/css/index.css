@@ -175,3 +175,152 @@ span:hover {
     min-width: 30px;
     background-color: white !important;
 }
+
+/* Seccion tecnologias */
+
+#tecnologias h1 {
+    color: black;
+}
+
+#tecnologias p {
+    color: black;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#tecnologias p:hover {
+    color: rgb(1, 255, 213);
+}
+
+#tecnologias img {
+    width: 270px;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+#tecnologias .divider {
+    border-bottom: 2px solid black;
+}
+
+#tecnologias .divider:hover {
+    border-bottom: 2px solid rgb(1, 255, 213);
+}
+
+
+/*Para el carrusel */
+
+/* Para el carrusel*/
+
+.carousel__contenedor {
+    position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: var(--primary);
+    opacity: 40%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+    opacity: 100%;
+}
+
+.carousel__anterior {
+    left: -30px;
+}
+
+.carousel__siguiente {
+    right: -30px;
+}
+
+.carousel__lista {
+    overflow: hidden;
+}
+
+.carousel__elemento {
+    text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: var(--primary);
+    opacity: .2;
+    border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+    opacity: 1;
+}
+
+.contenedor {
+    max-width: 1200px !important;
+    width: 90% !important;
+    margin: auto !important;
+}
+
+/* footer */
+
+
+
+/* Seccion del footer*/
+
+
+
+#footer h4 {
+    font-weight: 100 !important;
+    font-size: 19px;
+    color: rgb(1, 255, 213);
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+#footer i {
+    color: rgb(1, 255, 213) !important;
+    margin: 0;
+}
+
+#footer .divider {
+    margin: 0;
+    border-bottom: 2px solid rgb(1, 255, 213);
+}
+
+#first h1 {
+    font-size: 40px;
+    color: var(--white);
+}
+
+#first h1:hover {
+    font-size: 41px;
+}
+
+#first p {
+    color: var(--white);
+}
+
+#first .container {
+    background-color: black !important;
+}
+
+#first .divider {
+    border-bottom: 2px solid var(--white) !important;
+}
