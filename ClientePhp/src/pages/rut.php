@@ -52,17 +52,18 @@
                         echo '<input type="text" class="input" name="nombre" id="nombre" placeholder="Ingrese rut">
                             <input class="btn" type="submit" name="enviar" value="Aceptar">';
                         
-                        
-                        
+                        $constante = '<div class="mensaje">';        
+                        $constante2 = '</div>';
+
                         if(isset($_POST['enviar'])){    
                             $rut_ingresado = $_POST['nombre'];
                             $resultado = $cliente->VerificadorRut(["Rut" => $rut_ingresado])->return;
                             if($resultado != 'k' && $resultado != 107 && $resultado != 0){
-                                echo '<div class="mensaje">' .$rut_ingresado .'-' .$resultado .'</div>';
-                           }else if ($resultado == 'k'){
-                                echo '<div class="mensaje">' .$rut_ingresado. '-' .'0'.'</div>';
+                                echo $constante .$rut_ingresado .'-' .$resultado .$constante2;
+                            }else if ($resultado == 'k'){
+                                echo $constante .$rut_ingresado. '-' .'0'.$constante2;
                             }else if ($resultado != 'k'){
-                                echo '<div class="mensaje">' .$rut_ingresado. '-' .'k'.'</div>';
+                                echo $constante .$rut_ingresado. '-' .'k'.$constante2;
                             }
                         }
 

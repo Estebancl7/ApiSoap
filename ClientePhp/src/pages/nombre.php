@@ -52,7 +52,9 @@
                         echo '<input type="text" class="input" name="nombre" id="nombre" placeholder="Ingrese nombre completo">
                             <input class="btn" type="submit" name="enviar2" value="Aceptar">';
                         
-                        
+                        $constante = '<div class="mensaje">';  
+                        $constante2 = '</div>';
+
                         if(isset($_POST['enviar2'])){
                             $nombre_ingresado = $_POST['nombre'];
                             $resultado = $cliente->nombre(["nombre" => $nombre_ingresado])->return;
@@ -63,13 +65,13 @@
                             else{
                                 for ($i = 0; $i < $largo; $i++){
                                     if($i == $largo-1){
-                                        echo '<h3 class="mensaje">' .'Segundo Apellido: ' .$resultado[$i] .'</h3>';   //print para segundo apelido
+                                        echo $constante .'Segundo Apellido: ' .$resultado[$i] .$constante2;   //print para segundo apelido
                                     }
                                     else if($i == $largo-2){
-                                        echo '<div class="mensaje">' .'Primer Apellido: ' .$resultado[$i] .'</div>';//print para primer apellid
+                                        echo $constante .'Primer Apellido: ' .$resultado[$i] .$constante2;//print para primer apellid
                                     }
                                     else{
-                                        echo '<div class="mensaje">'.'Nombre: ' .$resultado[$i] .'</div>';    //print para nombres
+                                        echo $constante.'Nombre: ' .$resultado[$i] .$constante2;    //print para nombres
                                     }
                                 }
                             }
