@@ -24,7 +24,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="" style="text-align: center;">Inicio </a>
+                        <a class="nav-link" href="/ClientePhp/index.php" style="text-align: center;">Inicio </a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="" style="text-align: center;">Nosotros </a>
@@ -37,24 +37,43 @@
     </nav>
 
     <section id="formu">
-        <div class="container border border-info bg-info mt-5 py-5 text-center">
+        <div class="container border border-info bg-info my-5 py-5 text-center">
             
             <h1>Nombre</h1>
-            <h1 class="divider3"></h1>
-            <div class="formulario">
+            <h1 class="divider3 mx-5"></h1>
+            <div class="formulario pt-5">
             <!--<a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
                     -->
-                <form action="rut.php" name="formulario1" method="POST" autocomplete="off">    
+                <form action="nombre.php" name="formulario1" method="POST" autocomplete="off">    
                     <?php
                         ini_set("soap.wsdl_cache_enabled", "0");
                         $cliente = new SoapClient('http://localhost:8080/APISoapRedes/ApiSoapRedes?WSDL');
                         
                         echo '<input type="text" class="input" name="nombre" id="nombre" placeholder="Ingrese nombre completo">
-                            <input class="btn" type="submit" name="enviar" value="Aceptar">';
+                            <input class="btn" type="submit" name="enviar2" value="Aceptar">';
                         
                         
-                        
-                        
+                        if(isset($_POST['enviar2'])){
+                            $nombre_ingresado = $_POST['nombre'];
+                            $resultado = $cliente->nombre(["nombre" => $nombre_ingresado])->return;
+                            $largo = sizeof($resultado);
+                            if ($largo < 3){
+                                echo '<div class="mensaje">Se debe ingresar minimo 1 nombre y 2 apellidos</div>';
+                            }
+                            else{
+                                for ($i = 0; $i < $largo; $i++){
+                                    if($i == $largo-1){
+                                        echo '<h3 class="mensaje">' .'Segundo Apellido: ' .$resultado[$i] .'</h3>';   //print para segundo apelido
+                                    }
+                                    else if($i == $largo-2){
+                                        echo '<div class="mensaje">' .'Primer Apellido: ' .$resultado[$i] .'</div>';//print para primer apellid
+                                    }
+                                    else{
+                                        echo '<div class="mensaje">'.'Nombre: ' .$resultado[$i] .'</div>';    //print para nombres
+                                    }
+                                }
+                            }
+                        }
 
                     ?>
                 </form>

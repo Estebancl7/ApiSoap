@@ -24,7 +24,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="" style="text-align: center;">Inicio </a>
+                        <a class="nav-link" href="/ClientePhp/index.php" style="text-align: center;">Inicio </a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="" style="text-align: center;">Nosotros </a>
@@ -41,7 +41,7 @@
             
             <h1 class="text-center">Verificador de Rut</h1>
             <h1 class="divider3"></h1>
-            <div class="formulario">
+            <div class="formulario pt-5">
             <!--<a href="src/pages/rut.php" class="btn btn-outline-light px-2 ml-1" style="text-align: center; max-width: 850px;">Verifica un rut</a>
                     -->
                 <form action="rut.php" name="formulario1" method="POST" autocomplete="off">    
@@ -54,14 +54,15 @@
                         
                         
                         
-                        if(isset($_POST['enviar'])){
+                        if(isset($_POST['enviar'])){    
                             $rut_ingresado = $_POST['nombre'];
                             $resultado = $cliente->VerificadorRut(["Rut" => $rut_ingresado])->return;
-                            
-                            if($resultado != "J"){
+                            if($resultado != 'k' && $resultado != 107 && $resultado != 0){
                                 echo '<div class="mensaje">' .$rut_ingresado .'-' .$resultado .'</div>';
-                            }else{
-                                echo 'Rut ingresado al else';
+                           }else if ($resultado == 'k'){
+                                echo '<div class="mensaje">' .$rut_ingresado. '-' .'0'.'</div>';
+                            }else if ($resultado != 'k'){
+                                echo '<div class="mensaje">' .$rut_ingresado. '-' .'k'.'</div>';
                             }
                         }
 

@@ -25,11 +25,6 @@ public class ApiSoapRedes {
     public String[] nombre(@WebParam(name = "nombre") String nombre) {
         //TODO write your implementation code here:
         String[] nombre2 = nombre.split(" ");
-        /*String nombre1 = nombrearray[1];
-        String nombre2 = nombrearray[2];
-        String nombre3 = nombrearray[3];
-        String apellido = nombrearray[4];
-        String apellido2 = nombrearray[5];*/
         return nombre2;
         
     }
@@ -69,22 +64,16 @@ public class ApiSoapRedes {
         explo = suman - explo;
         suman = 11 - explo;
         if(suman == 10){
-            /*if(){
-            };  */
+            return 'k';
         }else if(suman == 11){
             return 0;
         }else{
             return suman;
-        }
-        return 0;
- 
+        }            
     }
-}
 
 
-if (Comunes.isNumeric(Rut)){
-    VerificadorRut;
-}else{
-    System.out.println("Ingrese rut correcto");
+
 }
+
 
