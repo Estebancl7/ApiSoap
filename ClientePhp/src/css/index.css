@@ -276,9 +276,6 @@ span:hover {
     margin: auto !important;
 }
 
-/* footer */
-
-
 
 /* Seccion del footer*/
 
@@ -317,9 +314,7 @@ span:hover {
     color: var(--white);
 }
 
-#first .container {
-    background-color: black !important;
-}
+
 
 #first .divider {
     border-bottom: 2px solid var(--white) !important;

@@ -111,44 +111,47 @@
                     <span class="">s</span>
                 </h1>
                 <h1 class="divider content-center px-5"></h1>
-                <div class="carousel pt-1">
-                    <div class="carousel__contenedor">
-                        <button aria-label="Anterior" class="carousel__anterior">
-                            <em class="fas fa-chevron-left"></em>
-                        </button>
-
-                        <div class="carousel__lista">
-                            <div class="carousel__elemento">
-                                <img src="src/img/js.png" alt="JavaScript">
-                                <p>JavaScript</p>
-                            </div>
-                           
+                <div class="container text-center">
+                    <div class="row">
+                        
+                        <div class="col">
                             <div class="carousel__elemento">
                                 <img src="src/img/html.png" alt="Html">
                                 <p>Html</p>
                             </div>
+                        </div>
+                        <div class="col">
                             <div class="carousel__elemento">
                                 <img src="src/img/css.png" alt="Css">
                                 <p>Css</p>
                             </div>
+                        </div>
+                        <div class="col">
                             <div class="carousel__elemento">
                                 <img src="src/img/boostrap.png" alt="Boostrap">
                                 <p>Bootstrap</p>
                             </div>
-
-                            <div class="carousel__elemento">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col">
+                            <div class="carousel__elemento mb-5">
                                 <img src="src/img/github.png" alt="Github">
                                 <p>Github</p>
                             </div>
-
                         </div>
-
-                        <button aria-label="Siguiente" class="carousel__siguiente">
-                            <em class="fas fa-chevron-right"></em>
-                        </button>
+                        
+                        <div class="col">
+                            <div class="carousel__elemento mb-5">
+                                <img src="src/img/php.png" alt="Php">
+                                <p>Php</p>
+                            </div>
+                        </div>
                     </div>
+                    
 
-                    <div role="tablist" class="carousel__indicadores pb-5"></div>
                 </div>
 
             </div>
@@ -163,7 +166,7 @@
                 <div class="content-center">
                     <div class="row my-1">
                         <div class="col d-flex justify-content-center">
-                            <a href="" class="text-white">
+                            <a href="https://github.com/Estebancl7/ApiSoap" class="text-white">
                                 <em class="fab fa-github"></em>
                             </a>
                         </div>
