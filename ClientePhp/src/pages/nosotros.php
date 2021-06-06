@@ -79,8 +79,8 @@
                     <p><em class="fas fa-check-circle"></em> Diego Salinas Gonzalez.</p>
                     <p><em class="fas fa-check-circle"></em> Esteban Tudela Ortiz.</p>
                     <p> <em class="fas fa-check-circle"></em> Paulo Vera Chacón.</p>
-                    <p> <em class="fas fa-check-circle"></em> Felipe Perez.</p>
-                    <p><em class="fas fa-check-circle"></em> Javier.</p>
+                    <p> <em class="fas fa-check-circle"></em> Felipe Perez Cares.</p>
+                    <p><em class="fas fa-check-circle"></em> Javier Cisternas Cristi.</p>
                 </div>
             </div>
         </div>

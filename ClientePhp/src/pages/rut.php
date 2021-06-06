@@ -60,10 +60,10 @@
                             $resultado = $cliente->VerificadorRut(["Rut" => $rut_ingresado])->return;
                             if($resultado != 'k' && $resultado != 107 && $resultado != 0){
                                 echo $constante .$rut_ingresado .'-' .$resultado .$constante2;
-                            }else if ($resultado == 'k'){
-                                echo $constante .$rut_ingresado. '-' .'0'.$constante2;
-                            }else if ($resultado != 'k'){
+                            }else if ($resultado == 'k' || $resultado == 107){
                                 echo $constante .$rut_ingresado. '-' .'k'.$constante2;
+                            }else {
+                                echo $constante .$rut_ingresado. '-' .'0'.$constante2;
                             }
                         }
 
